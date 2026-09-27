@@ -1,0 +1,11 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kuesioner PJJ | MIS AL MUJTAHIDIN</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header class="hero"><div class="brand"><div class="logo">MA</div><div><b>MIS AL MUJTAHIDIN</b><small>Kuesioner Pembelajaran Jarak Jauh</small></div></div><a href="admin/" class="admin-link">Admin</a></header>
+<main class="container"><section class="card intro"><h1>Kuesioner Pembelajaran Jarak Jauh (PJJ)</h1><p>Mohon mengisi sesuai pengalaman selama PJJ. Jawaban digunakan sebagai bahan evaluasi dan perbaikan pembelajaran di MIS AL MUJTAHIDIN.</p><div class="notice"><b>Skala:</b> 1 = Sangat Tidak Setuju sampai 5 = Sangat Setuju.</div></section>
+<form id="surveyForm" class="card"><h2>Data Responden</h2><div class="grid">
+<label>Nama/Inisial<input name="nama" maxlength="80" required placeholder="Boleh menggunakan inisial"></label>
+<label>Status Responden<select name="status" required><option value="">Pilih...</option><option>Siswa</option><option>Orang Tua/Wali</option><option>Guru</option></select></label>
+<label>Kelas<select name="kelas" required><option value="">Pilih kelas...</option><option>Kelas I</option><option>Kelas II</option><option>Kelas III</option><option>Kelas IV</option><option>Kelas V</option><option>Kelas VI</option></select></label></div>
+<h2>Penilaian PJJ</h2><div id="questions"></div>
+<label>Saran/masukan untuk pelaksanaan PJJ<textarea name="saran" rows="5" maxlength="1000"></textarea></label>
+<button class="btn" type="submit" id="submitBtn">Kirim Kuesioner</button><div id="message"></div></form></main><footer>MIS AL MUJTAHIDIN • Kuesioner PJJ</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="assets/config.js"></script><script src="assets/app.js"></script></body></html>
